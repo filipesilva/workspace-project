@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "ng": "ng",
+    "architect": "architect",
     "start": "ng serve",
     "build": "ng build --prod",
     "test": "ng test",
@@ -26,10 +26,10 @@
     "zone.js": "^0.8.19"
   },
   "devDependencies": {
-    "@angular-devkit/architect": "angular/angular-devkit-architect-builds#1523765",
-    "@angular-devkit/build-webpack": "angular/angular-devkit-build-webpack-builds#1523765",
-    "@angular-devkit/core": "angular/angular-devkit-core-builds#1523765",
-    "@angular/cli": "~6.0.0-beta.6",
+    "@angular-devkit/architect": "angular/angular-devkit-architect-builds#05bfb89",
+    "@angular-devkit/architect-cli": "angular/angular-devkit-architect-cli-builds#05bfb89",
+    "@angular-devkit/build-webpack": "angular/angular-devkit-build-webpack-builds#05bfb89",
+    "@angular-devkit/core": "angular/angular-devkit-core-builds#05bfb89",
     "@angular/compiler-cli": "^5.2.0",
     "@angular/language-service": "^5.2.0",
     "@types/jasmine": "~2.8.6",

@@ -22,7 +22,7 @@
             "progress": false,
             "assets": [
               {
-                "glob": "favicon.ico",
+                "glob": "favicon.ico"
               },
               {
                 "glob": "**/*",
@@ -36,7 +36,6 @@
               }
             ],
             "scripts": []
-
           },
           "configurations": {
             "production": {
