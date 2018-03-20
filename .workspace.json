@@ -7,7 +7,7 @@
   "architect": {},
   "projects": {
     "app": {
-      "root": "src",
+      "root": "projects/app",
       "projectType": "application",
       "schematics": {},
       "architect": {
@@ -15,10 +15,10 @@
           "builder": "@angular-devkit/build-webpack:browser",
           "options": {
             "outputPath": "dist",
-            "index": "src/index.html",
-            "main": "src/main.ts",
-            "polyfills": "src/polyfills.ts",
-            "tsConfig": "src/tsconfig.app.json",
+            "index": "projects/app/src/index.html",
+            "main": "projects/app/src/main.ts",
+            "polyfills": "projects/app/src/polyfills.ts",
+            "tsConfig": "projects/app/tsconfig.app.json",
             "progress": false,
             "assets": [
               {
@@ -26,13 +26,13 @@
               },
               {
                 "glob": "**/*",
-                "input": "src/assets",
+                "input": "projects/app/src/assets",
                 "output": "assets"
               }
             ],
             "styles": [
               {
-                "input": "src/styles.css"
+                "input": "projects/app/src/styles.css"
               }
             ],
             "scripts": []
@@ -71,35 +71,34 @@
         "test": {
           "builder": "@angular-devkit/build-webpack:karma",
           "options": {
-            "main": "src/test.ts",
-            "polyfills": "src/polyfills.ts",
-            "tsConfig": "src/tsconfig.spec.json",
-            "karmaConfig": "karma.conf.js",
+            "main": "projects/app/src/test.ts",
+            "polyfills": "projects/app/src/polyfills.ts",
+            "tsConfig": "projects/app/tsconfig.spec.json",
+            "karmaConfig": "projects/app/karma.conf.js",
             "progress": false,
-            "styles": [
-              {
-                "input": "src/styles.css"
-              }
-            ],
-            "scripts": [],
+            "watch": false,
             "assets": [
               {
-                "glob": "favicon.ico",
-                "input": "src/",
-                "output": "./"
+                "glob": "favicon.ico"
               },
               {
                 "glob": "**/*",
-                "input": "src/assets",
+                "input": "projects/app/src/assets",
                 "output": "assets"
               }
-            ]
+            ],
+            "styles": [
+              {
+                "input": "projects/app/src/styles.css"
+              }
+            ],
+            "scripts": []
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-webpack:tslint",
           "options": {
-            "tsConfig": "src/tsconfig.app.json",
+            "tsConfig": "projects/app/tsconfig.app.json",
             "exclude": [
               "**/node_modules/**"
             ]
@@ -108,7 +107,7 @@
         "lint-test": {
           "builder": "@angular-devkit/build-webpack:tslint",
           "options": {
-            "tsConfig": "src/tsconfig.spec.json",
+            "tsConfig": "projects/app/tsconfig.spec.json",
             "exclude": [
               "**/node_modules/**"
             ]
@@ -117,20 +116,20 @@
       }
     },
     "app-e2e": {
-      "root": "e2e",
+      "root": "projects/app-e2e/",
       "projectType": "application",
       "architect": {
         "e2e": {
           "builder": "@angular-devkit/build-webpack:protractor",
           "options": {
-            "protractorConfig": "protractor.conf.js",
+            "protractorConfig": "projects/app-e2e/protractor.conf.js",
             "devServerTarget": "app:dev-server"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-webpack:tslint",
           "options": {
-            "tsConfig": "e2e/tsconfig.e2e.json",
+            "tsConfig": "projects/app-e2e/tsconfig.e2e.json",
             "exclude": [
               "**/node_modules/**"
             ]
