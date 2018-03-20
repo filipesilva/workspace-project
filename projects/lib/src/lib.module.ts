@@ -6,6 +6,15 @@ import { LibService } from './lib.service';
 @NgModule({
   imports: [CommonModule],
   declarations: [LibComponent],
+  providers: [LibService],
   exports: [LibComponent]
 })
-export class LibModule { }
+export class LibModule {
+  // TODO: is forRoot needed?
+  // public static forRoot(): ModuleWithProviders {
+  //   return {
+  //     ngModule: LibModule,
+  //     providers: [LibService]
+  //   };
+  // }
+}

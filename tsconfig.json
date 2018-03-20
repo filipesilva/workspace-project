@@ -18,7 +18,7 @@
     "baseUrl": ".",
     "paths": {
       "lib": [
-        "projects/lib/public_api.ts"
+        "./projects/lib/src/public_api.ts"
       ]
     }
   }
