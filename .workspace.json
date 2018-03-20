@@ -14,7 +14,7 @@
         "build": {
           "builder": "@angular-devkit/build-webpack:browser",
           "options": {
-            "outputPath": "dist",
+            "outputPath": "dist/app",
             "index": "projects/app/src/index.html",
             "main": "projects/app/src/main.ts",
             "polyfills": "projects/app/src/polyfills.ts",
@@ -102,15 +102,6 @@
               "projects/app/tsconfig.app.json",
               "projects/app/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
-          }
-        },
-        "lint-test": {
-          "builder": "@angular-devkit/build-webpack:tslint",
-          "options": {
-            "tsConfig": "projects/app/tsconfig.spec.json",
             "exclude": [
               "**/node_modules/**"
             ]
