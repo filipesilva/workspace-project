@@ -136,6 +136,18 @@
           }
         }
       }
+    },
+    "lib": {
+      "root": "projects/lib",
+      "projectType": "library",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "project": "projects/lib/package.json"
+          }
+        }
+      }
     }
   }
 }

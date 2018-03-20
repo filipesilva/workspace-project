@@ -37,6 +37,7 @@
     "@angular-devkit/architect": "angular/angular-devkit-architect-builds#05bfb89",
     "@angular-devkit/architect-cli": "angular/angular-devkit-architect-cli-builds#05bfb89",
     "@angular-devkit/build-webpack": "angular/angular-devkit-build-webpack-builds#05bfb89",
+    "@angular-devkit/build-ng-packagr": "../../work/devkit/dist/@angular-devkit_build-ng-packagr.tgz",
     "@angular-devkit/core": "angular/angular-devkit-core-builds#05bfb89",
     "@angular-devkit/schematics": "angular/angular-devkit-schematics-builds#05bfb89",
     "@angular-devkit/schematics-cli": "angular/angular-devkit-schematics-cli-builds#05bfb89",
