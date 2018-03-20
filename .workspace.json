@@ -144,7 +144,7 @@
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
-            "project": "projects/lib/package.json"
+            "project": "projects/lib/ng-package.json"
           }
         }
       }

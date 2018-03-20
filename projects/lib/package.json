@@ -1,10 +1,5 @@
 {
   "name": "lib",
   "version": "1.0.0",
-  "peerDependencies": [],
-  "ngPackage": {
-    "lib": {
-      "entryFile": "public_api.ts"
-    }
-  }
+  "peerDependencies": {}
 }
