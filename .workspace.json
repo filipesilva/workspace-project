@@ -98,7 +98,10 @@
         "lint": {
           "builder": "@angular-devkit/build-webpack:tslint",
           "options": {
-            "tsConfig": "projects/app/tsconfig.app.json",
+            "tsConfig": [
+              "projects/app/tsconfig.app.json",
+              "projects/app/tsconfig.spec.json"
+            ],
             "exclude": [
               "**/node_modules/**"
             ]
@@ -145,6 +148,16 @@
           "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
             "project": "projects/lib/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-webpack:karma",
+          "options": {
+            "main": "projects/lib/src/test.ts",
+            "tsConfig": "projects/lib/tsconfig.spec.json",
+            "karmaConfig": "projects/lib/karma.conf.js",
+            "progress": false,
+            "watch": false
           }
         }
       }
