@@ -4,6 +4,8 @@
   "license": "MIT",
   "scripts": {
     "architect": "architect",
+    "schematics": "schematics",
+    "add-lib": "schematics -- @schematics/angular:library --name=lib --baseDir=projects",
     "start": "ng serve",
     "build": "ng build --prod",
     "test": "ng test",
@@ -26,11 +28,19 @@
     "zone.js": "^0.8.19"
   },
   "devDependencies": {
+    "@angular/compiler": "^5.0.0",
+    "@angular/compiler-cli": "^5.2.0",
+    "ng-packagr": "^2.2.0",
+    "tsickle": ">=0.25.5",
+    "tslib": "^1.7.1",
+    "typescript": "~2.5.3",
     "@angular-devkit/architect": "angular/angular-devkit-architect-builds#05bfb89",
     "@angular-devkit/architect-cli": "angular/angular-devkit-architect-cli-builds#05bfb89",
     "@angular-devkit/build-webpack": "angular/angular-devkit-build-webpack-builds#05bfb89",
     "@angular-devkit/core": "angular/angular-devkit-core-builds#05bfb89",
-    "@angular/compiler-cli": "^5.2.0",
+    "@angular-devkit/schematics": "angular/angular-devkit-schematics-builds#05bfb89",
+    "@angular-devkit/schematics-cli": "angular/angular-devkit-schematics-cli-builds#05bfb89",
+    "@schematics/angular": "angular/schematics-angular-builds#05bfb89",
     "@angular/language-service": "^5.2.0",
     "@types/jasmine": "~2.8.6",
     "@types/jasminewd2": "~2.0.3",
@@ -45,7 +55,6 @@
     "karma-jasmine-html-reporter": "^0.2.2",
     "protractor": "~5.3.0",
     "ts-node": "~5.0.0",
-    "tslint": "~5.9.1",
-    "typescript": "~2.5.3"
+    "tslint": "~5.9.1"
   }
 }
