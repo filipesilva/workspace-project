@@ -14,12 +14,6 @@
     "lib": [
       "es2017",
       "dom"
-    ],
-    "baseUrl": ".",
-    "paths": {
-      "lib": [
-        "./projects/lib/src/public_api.ts"
-      ]
-    }
+    ]
   }
 }
