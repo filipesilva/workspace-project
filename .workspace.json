@@ -123,7 +123,7 @@
           "builder": "@angular-devkit/build-webpack:protractor",
           "options": {
             "protractorConfig": "projects/app-e2e/protractor.conf.js",
-            "devServerTarget": "app:dev-server"
+            "devServerTarget": "app:serve"
           }
         },
         "lint": {
