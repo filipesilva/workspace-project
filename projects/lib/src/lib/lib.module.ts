@@ -3,9 +3,9 @@ import { LibComponent } from './lib.component';
 import { LibService } from './lib.service';
 
 @NgModule({
-  imports: [
-  ],
+  imports: [],
   declarations: [LibComponent],
+  exports: [LibComponent],
   providers: [LibService]
 })
 export class LibModule { }
