@@ -1,7 +1,7 @@
 {
   "$schema": "./node_modules/@angular-devkit/core/src/workspace/workspace-schema.json",
   "version": 1,
-  "newProjectRoot": "./projects",
+  "newProjectRoot": "projects",
   "cli": {},
   "schematics": {},
   "architect": {},
@@ -19,10 +19,10 @@
             "main": "projects/app/src/main.ts",
             "polyfills": "projects/app/src/polyfills.ts",
             "tsConfig": "projects/app/tsconfig.app.json",
-            "progress": false,
             "assets": [
               {
-                "glob": "favicon.ico"
+                "glob": "favicon.ico",
+                "input": "projects/app/src/"
               },
               {
                 "glob": "**/*",

@@ -5,7 +5,7 @@
   "scripts": {
     "architect": "architect",
     "schematics": "schematics",
-    "add-lib": "schematics @schematics/angular:library --name=lib --baseDir=projects",
+    "add-lib": "schematics @schematics/angular:ng-new --name=lib-two --version=6.0.0",
     "start": "ng serve",
     "build": "ng build --prod",
     "test": "ng test",
@@ -24,7 +24,7 @@
     "@angular/platform-browser-dynamic": "6.0.0-rc.0",
     "@angular/router": "6.0.0-rc.0",
     "core-js": "^2.4.1",
-    "rxjs": "6.0.0-beta.1",
+    "rxjs": "6.0.0-beta.0",
     "zone.js": "^0.8.19"
   },
   "devDependencies": {
